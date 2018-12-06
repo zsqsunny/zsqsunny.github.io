@@ -99,7 +99,7 @@
             
               <li class="archive-list-container">
                 <a href="javascript:;">归档</a>
-                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">3</span></li></ul>
+                <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/">2018</a><span class="archive-list-count">4</span></li></ul>
               </li>
             
           
@@ -163,6 +163,39 @@
           <h1><a href="/archives/2018" class="archive-year">2018</a></h1>
         </div>
         <div class="post-list">
+    
+  
+
+    <div class="post-list-item article">
+      <h3 class="article-header">
+        <a href="/2018/12/06/jsday1/">
+  jsday1
+</a>
+
+      </h3>
+      
+
+      <div class="article-info">
+        <a href="/2018/12/06/jsday1/"><span class="article-date">
+  2018-12-06
+</span>
+</a>
+        
+
+        
+
+      </div>
+      <div class="article-entry">
+        
+          <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line">1.js  概述</span><br><span class="line">	（1）发展历史</span><br><span class="line">		1995年，js最早出现在Netscape浏览器中</span><br><span class="line">		2009年，js遵循commonjs规范，开始向服务器端发展</span><br><span class="line">	（2）特点</span><br><span class="line">		弱类型语言</span><br><span class="line">		解释型语言，编译一行，执行一行</span><br><span class="line">		夸平台</span><br><span class="line">		基于对象</span><br><span class="line">	（3）应用领域</span><br><span class="line">		网页中的交互效果</span><br><span class="line">		移动app</span><br><span class="line">		应用于web服务器端</span><br><span class="line">		</span><br><span class="line">2.搭建js开发环境</span><br><span class="line">	浏览器中，内置的js解释器</span><br><span class="line">	服务器中需要安装node.js——https://nodejs.org nodejs官网</span><br><span class="line">	运行方式：1. nodejs运行——直接创建js文件——node  c:/xampp/....../02js</span><br><span class="line">		2. 浏览器下——创建js文件，html文件    &lt;script src=&quot;02.js&quot;&gt;&lt;/script&gt;——双击打开HTML</span><br><span class="line"></span><br><span class="line">3.js的语法规范</span><br><span class="line">	（1）区分大小写</span><br><span class="line">	（2）每行结束的分号可加可不加</span><br><span class="line">	（3）分为单行注释（//）和多行注释（/*........*/）</span><br><span class="line">	</span><br><span class="line">4.变量：用于存储数据的容器</span><br><span class="line">	x=1   y=2</span><br><span class="line">	（1）声明变量</span><br><span class="line">		使用关键字   var</span><br><span class="line">		var x=1;</span><br><span class="line">	（2）变量的命名规则</span><br><span class="line">		使用字母、美元符号$、下划线、数字，不能以数字开头。</span><br><span class="line">		不能使用关键字和保留字作为变量名</span><br><span class="line">		userName   isOnsale   驼峰命名法</span><br><span class="line">		user_name   is_onsale   下划线命名法</span><br><span class="line">	（3）一次声明多个变量</span><br><span class="line">		var chinese=95,math=99;   ——用逗号隔开</span><br><span class="line">	（4）声明变量没有赋值</span><br><span class="line">		var a;  ——a的值没有定义（undefined）</span><br><span class="line">5.常量：一旦声明不能重新赋值</span><br><span class="line">	列如：圆周率，春节，中秋节。。。。</span><br><span class="line">	const pi=3.14;</span><br><span class="line">	console.log(pi);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">复习今天内容，删除代码，根据注释编写</span><br><span class="line"> 练习：使用变量保存圆的半径为5，常量为圆周3.14，分别计算30度和60度的周长</span><br><span class="line">            使用变量保存商品1的单价12.5和数量7，  商品2的单价18和数量3.5， 计算商品的总价</span><br></pre></td></tr></table></figure>
+        
+      </div>
+    </div>
+
+  
+
+  
+  
     
   
 
